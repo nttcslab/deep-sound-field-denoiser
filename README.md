@@ -14,9 +14,11 @@ The Deep Sound-Field Denoiser is a deep learning model for noise reduction in so
 
 1. Our method uses NAFNet (Nonlinear Activation Free Network for Image Restoration) [1] as a network. Copy all files in 'basicsr' directory from [here](https://github.com/megvii-research/NAFNet) into your 'basicsr' directory.
 
-2. Download [sound-field-image dataset](https://zenodo.org/record/8357753) and place them in the 'dataset' directory. When you run evaluation.py, 'evaluatation' directory from the dataset is required. When you run train.py, 'training' and 'validation' directories are required.
+2. Download [trained weights](https://zenodo.org/record/8363120) and place them in the 'trained_weights' directory.
 
-3. Install dependencies listed on [requirements.txt](requirements.txt).
+3. Download [sound-field-image dataset](https://zenodo.org/record/8357753) and place them in the 'dataset' directory. When you run evaluation.py, 'evaluatation' directory from the dataset is required. When you run train.py, 'training' and 'validation' directories are required.
+
+4. Install dependencies listed on [requirements.txt](requirements.txt).
 
 ## Use deep sound-field denoiser
 
@@ -32,7 +34,7 @@ To evaluate metrics and save denoised data on evaluation dataset, simply run
 python evaluate.py
 ```
 
-You can specify parameters for evaluation by the properties below "eval" section in [config.yml](config.yml). Three models (NAFNet, LRDUNet, DnCNN) and two noises (white and speckle) are provided with their pretrained weights in "trained_weights" directory. The evaluation results will be saved into "save_dir" directory of "evaluation" section in the yaml file, a sub directory with the timestamp as its name will be automatically generated.
+You can specify parameters for evaluation by the properties below 'eval' section in [config.yml](config.yml). The evaluation results will be saved into 'save_dir' directory of 'evaluation' section in the yaml file, a sub directory with the timestamp as its name will be automatically generated. Three models (NAFNet, LRDUNet, DnCNN) and two noises (white and speckle) are provided with their [trained weights](https://zenodo.org/record/8363120).
 
 ### Training
 
@@ -42,7 +44,7 @@ To train your model, run
 python train.py
 ```
 
-You can specify parameters for training by the properties below "train" and "validation" sections in [config.yml](config.yml).
+You can specify parameters for training by the properties below 'train' and 'validation' sections in [config.yml](config.yml).
 
 ## License
 

@@ -2,7 +2,7 @@
 
 Welcome to the official GitHub repository for the Deep Sound-Field Denoiser, a DNN-based denoising method for optically-measured sound fields [1]. This repository contains the codebase and sound-field image dataset used in our paper. You can leverage our pretrained model to denoise your own sound-field images.
 
-For more details, see our [project page](https://www.kenjiishikawa.com/research/deep-acousto-optic-denoiser) and [paper](https://arxiv.org/abs/2304.14923)
+For more details, see our [project page](https://www.kenjiishikawa.com/research/deep-acousto-optic-denoiser) and [paper](https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-20-33405&id=539654)
 
 ## What is deep sound-field denoiser?
 
@@ -52,6 +52,6 @@ Read the NTTSoftwareLicenseAgreement.pdf.
 
 ## Reference
 
-[1] K. Ishikawa, D. Takeuchi, N. Harada, and T. Moriya ``Deep sound-field denoiser: optically-measured sound-field denoising using deep neural network,'' arXiv:2304.14923 (2023).
+[1] K. Ishikawa, D. Takeuchi, N. Harada, and T. Moriya, "Deep sound-field denoiser: optically-measured sound-field denoising using deep neural network," Opt. Express 31, 33405-33420 (2023). https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-20-33405&id=539654
 
 [2] Chen, L., Chu, X., Zhang, X., Sun, J. (2022). Simple Baselines for Image Restoration. In: Avidan, S., Brostow, G., Cissé, M., Farinella, G.M., Hassner, T. (eds) Computer Vision – ECCV 2022. ECCV 2022. Lecture Notes in Computer Science, vol 13667. Springer, Cham. https://doi.org/10.1007/978-3-031-20071-7_2
